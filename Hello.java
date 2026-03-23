@@ -25,10 +25,8 @@ class Hello{
 public static void main(String a[]){
 
     Animal obj = new Animal();
-    // obj.age = 10;
-    // obj.name = "Tommy";
 
-    obj.getAge();
+obj.getAge();
     obj.getName();
 
     obj.setAge(10);
