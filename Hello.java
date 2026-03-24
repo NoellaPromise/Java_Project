@@ -4,6 +4,12 @@
 class Animal{
     private int age ;
     private String name ;
+    public Animal()
+{
+    age = 0;
+    name = "No name";
+
+}
 
     public int getAge() {
         return age;
@@ -20,7 +26,10 @@ class Animal{
         return name;
     }
     
+
+    
 }
+
 class Hello{
 public static void main(String a[]){
 
