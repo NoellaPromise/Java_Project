@@ -2,47 +2,21 @@
 
 
 class Animal{
-    private int age ;
-    private String name ;
-    public Animal()
-{
-    age = 0;
-    name = "No name";
-
-}
-
-    public int getAge() {
-        return age;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public int setAge(int age) {
-        return age;
-    }
-
-    public String setName(String name) {
-        return name;
-    }
+    int age ;
+    String name ;
     
-
-    
+    public Animal(int age , String name){
+        this.age = age;
+        this.name = name;
+    }
 }
 
 class Hello{
 public static void main(String a[]){
 
-    Animal obj = new Animal();
-
-obj.getAge();
-    obj.getName();
-
-    obj.setAge(10);
-    obj.setName("Tommy");
-
-    System.out.println(obj.getAge());
-    System.out.println(obj.getName());
+Animal obj = new Animal (10 , "Dog");
+    System.out.println(obj.age);
+    System.out.println(obj.name);
 }
 
 }
