@@ -16,22 +16,24 @@ class Animal{
     System.out.println(name);
     System.out.println(color);
 }
-
-public static void display1(Animal obj){
-    System.out.println(obj.name);
+static{
+    color = "White";
+    System.out.println("Static block executed");
 }
 
+// public static void display1(Animal obj){
+//     // System.out.println(obj.name);
+// }
+
 
 }
-
-
 
 class Hello{
 public static void main(String a[]){
 
 Animal obj = new Animal (10 , "Dog" , "Black");
     obj.display();
-    Animal.display1(obj);
+    // Animal.display1(obj);
 }
 
 }
