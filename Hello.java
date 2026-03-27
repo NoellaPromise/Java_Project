@@ -11,15 +11,27 @@ class Animal{
         this.name = name;
         Animal.color = color;
     }
+    public void display(){
+    System.out.println(age);
+    System.out.println(name);
+    System.out.println(color);
 }
+
+public static void display1(Animal obj){
+    System.out.println(obj.name);
+}
+
+
+}
+
+
 
 class Hello{
 public static void main(String a[]){
 
 Animal obj = new Animal (10 , "Dog" , "Black");
-    System.out.println(obj.age);
-    System.out.println(obj.name);
-    System.out.println(obj.color);
+    obj.display();
+    Animal.display1(obj);
 }
 
 }
